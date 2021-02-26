@@ -12,7 +12,7 @@
 
 
 def opposite(n: int) -> int:
-    result = None
+    result = n * (-1)
     return result
 
 

@@ -28,7 +28,7 @@ def generate_fio(surname: str, name: str, patronymic: str) -> str:
     :return: Фамилия И.О.
     :rtype: str
     """
-    result = None
+    result = f"{surname.title()} {name.title()[0]}.{patronymic.title()[0]}."
     return result
 
 

@@ -12,7 +12,7 @@ n_sum(3) -> 39, т.к. 3+9+27=39
 
 
 def n_sum(n: int) -> int:
-    result = None
+    result = n + n*n + n*n*n
     return result
 
 

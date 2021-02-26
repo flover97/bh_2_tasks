@@ -23,7 +23,7 @@ def multiply_str(user_string: str, n: str) -> str:
     :return: результирующая строка
     :rtype: str
     """
-    result = None
+    result = f"{user_string}" * int(n)
     return result
 
 

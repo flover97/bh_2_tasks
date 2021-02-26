@@ -42,9 +42,8 @@ def calculate_deposit(summa: float, years: int) -> float:
     :return: итоговая сумма на вкладе
     :rtype: float
     """
-    result = None
+    result = int(summa) * ((1 + (DEPOSIT_RATE * 0.01)) ** years)
     return result
-
 
 if __name__ == '__main__':
     print('Программа расчета суммы на депозите после некоторого кол-ва лет')

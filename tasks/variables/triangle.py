@@ -1,3 +1,6 @@
+import math
+
+
 """
 ЗАДАНИЕ
 --------------------------------------------------------------------------------
@@ -12,9 +15,9 @@ triangle(3, 4) -> (5, 12, 6)
 
 
 def triangle(side1: int, side2: int) -> tuple:
-    hypotenuse = None
-    perimeter = None
-    square = None
+    hypotenuse = (side1 ** 2 + side2 ** 2) ** 0.5
+    perimeter = side1 + side2 + math.sqrt(side1 ** 2 + side2 ** 2)
+    square = side1 * side2 / 2
     return hypotenuse, perimeter, square
 
 

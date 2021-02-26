@@ -1,3 +1,6 @@
+import math
+
+
 """
 ЗАДАНИЕ
 --------------------------------------------------------------------------------
@@ -23,9 +26,10 @@ def square(side: str) -> tuple:
     :return: Кортеж (Периметр, Площадь, Диагональ)
     :rtype: tuple
     """
-    perimeter = None
-    s_square = None
-    diagonal = None
+    side = int(side)
+    perimeter = side * 4
+    s_square = side * side
+    diagonal = math.sqrt(2) * side
     return perimeter, s_square, diagonal
 
 
